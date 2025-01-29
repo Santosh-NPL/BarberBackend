@@ -14,18 +14,34 @@ return [
     'roles_structure' => [
         'superadministrator' => [
             'users' => 'c,r,u,d',
+            'appointments' => 'c,r,u,d',
+            'services' => 'c,r,u,d',
+            'barbers' => 'c,r,u,d',
             'payments' => 'c,r,u,d',
             'profile' => 'r,u',
+            'reports' => 'r',
         ],
         'administrator' => [
-            'users' => 'c,r,u,d',
+            'appointments' => 'c,r,u,d',
+            'services' => 'c,r,u,d',
+            'barbers' => 'c,r,u,d',
+            'payments' => 'c,r,u,d',
+            'profile' => 'r,u',
+            'reports' => 'r',
+        ],
+        'barber' => [
+            'appointments' => 'r,u',
+            'profile' => 'r,u',
+            'services' => 'r',
+        ],
+        'receptionist' => [
+            'appointments' => 'c,r,u',
+            'payments' => 'c,r,u',
             'profile' => 'r,u',
         ],
-        'user' => [
+        'customer' => [
+            'appointments' => 'c,r,u,d',
             'profile' => 'r,u',
-        ],
-        'role_name' => [
-            'module_1_name' => 'c,r,u,d',
         ],
     ],
 
